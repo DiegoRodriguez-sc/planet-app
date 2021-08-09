@@ -1,0 +1,141 @@
+.info-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-btns-container {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--light);
+  font-size: 1rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border: 1px solid var(--light-grey);
+  border-radius: 2px;
+  font-family: "spartan", sans-serif;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 2rem;
+  transition: all 0.3s ease;
+}
+.btn .number {
+  color: var(--light-grey);
+}
+.btn:hover {
+  background-color: var(--dark-grey);
+}
+.btn-mercury:focus {
+  background-color: var(--mercury-color);
+}
+.btn-venus:focus {
+  background-color: var(--venus-color);
+}
+.btn-earth:focus {
+  background-color: var(--earth-color);
+}
+.btn-mars:focus {
+  background-color: var(--mars-color);
+}
+.btn-jupiter:focus {
+  background-color: var(--jupiter-color);
+}
+.btn-saturn:focus {
+  background-color: var(--saturn-color);
+}
+.btn-uranus:focus {
+  background-color: var(--uranus-color);
+}
+.btn-neptune:focus {
+  background-color: var(--neptune-color);
+}
+
+@media screen and (max-width: 980px) {
+  .btn {
+    font-size: 0.75rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 790px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 500px) {
+  .info-btns {
+    grid-area: btn;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-btns-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  .hidden,
+  .number {
+    display: none;
+  }
+
+  .btn {
+    font-size: 0.7rem;
+    height: 3rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn:hover {
+    background-color: transparent;
+  }
+
+  .btn-mercury:focus {
+    background-color: transparent;
+    border-bottom: 4px solid var(--mercury-color);
+  }
+  .btn-venus:focus {
+    background-color: transparent;
+    border-bottom: 4px solid var(--venus-color);
+  }
+  .btn-earth:focus {
+    background-color: transparent;
+    border-bottom: 4px solid var(--earth-color);
+  }
+  .btn-mars:focus {
+    background-color: transparent;
+    border-bottom: 4px solid var(--mars-color);
+  }
+  .btn-jupiter:focus {
+    background-color: transparent;
+    border-bottom: 4px solid var(--jupiter-color);
+  }
+  .btn-saturn:focus {
+    background-color: transparent;
+    border-bottom: 4px solid var(--saturn-color);
+  }
+  .btn-uranus:focus {
+    background-color: transparent;
+    border-bottom: 4px solid var(--uranus-color);
+  }
+  .btn-neptune:focus {
+    background-color: transparent;
+    border-bottom: 4px solid var(--neptune-color);
+  }
+}

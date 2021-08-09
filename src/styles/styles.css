@@ -1,0 +1,10 @@
+/* base */
+@import "./base/settings.css";
+@import "./base/base.css";
+
+/* components */
+@import "./components/navbar.css";
+@import "./components/planets.css";
+@import "./components/info.css";
+@import "./components/stats.css";
+@import "./components/button.css";

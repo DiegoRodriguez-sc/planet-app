@@ -1,0 +1,213 @@
+.nav {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.logo {
+  font-family: "Antonio", sans-serif;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.nav-items {
+  display: flex;
+  font-size: 0.8rem;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: var(--light);
+  text-decoration: none;
+  margin: 0 0.6rem;
+}
+
+.mercury:hover {
+  color: var(--mercury-color);
+}
+.venus:hover {
+  color: var(--venus-color);
+}
+.earth:hover {
+  color: var(--earth-color);
+}
+.mars:hover {
+  color: var(--mars-color);
+}
+.jupiter:hover {
+  color: var(--jupiter-color);
+}
+.saturn:hover {
+  color: var(--saturn-color);
+}
+.uranus:hover {
+  color: var(--uranus-color);
+}
+.neptune:hover {
+  color: var(--neptune-color);
+}
+
+/* active  */
+
+.mercury-a {
+  color: var(--mercury-color);
+}
+.venus-a {
+  color: var(--venus-color);
+}
+.earth-a {
+  color: var(--earth-color);
+}
+.mars-a {
+  color: var(--mars-color);
+}
+.jupiter-a {
+  color: var(--jupiter-color);
+}
+.saturn-a {
+  color: var(--saturn-color);
+}
+.uranus-a {
+  color: var(--uranus-color);
+}
+.neptune-a {
+  color: var(--neptune-color);
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .nav-link {
+    font-size: 0.7rem;
+  }
+  .logo {
+    font-size: 1.8rem;
+  }
+}
+/* tablet */
+@media screen and (max-width: 790px) {
+  .nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-link {
+    font-size: 0.5rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+}
+
+/* movil */
+@media screen and (max-width: 500px) {
+  .nav {
+    border: none;
+    position: fixed;
+    background-color: var(--dark);
+    z-index: 999;
+  }
+  .nav-info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+  .grey {
+    color: grey;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-item {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .nav-link::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 2rem;
+  }
+
+  .nav-link:hover {
+    border: none;
+  }
+
+  .mercury::before {
+    background-color: var(--mercury-color);
+  }
+  .venus::before {
+    background-color: var(--venus-color);
+  }
+  .earth::before {
+    background-color: var(--earth-color);
+  }
+  .mars::before {
+    background-color: var(--mars-color);
+  }
+  .jupiter::before {
+    background-color: var(--jupiter-color);
+  }
+  .saturn::before {
+    background-color: var(--saturn-color);
+  }
+  .uranus::before {
+    background-color: var(--uranus-color);
+  }
+  .neptune::before {
+    background-color: var(--neptune-color);
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    height: 80vh;
+    top: 50px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: var(--dark);
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 999;
+  }
+}

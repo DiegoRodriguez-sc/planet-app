@@ -1,0 +1,361 @@
+.info-planets {
+  width: 100vw;
+  height: 72vh;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* images of planets */
+
+.info-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  grid-row: 1/3;
+}
+
+.info-img-geology {
+  position: absolute;
+  width: 10rem;
+  height: 12rem;
+  bottom: 0;
+}
+
+.info-mercury {
+  width: 18rem;
+  height: 18rem;
+}
+.info-venus {
+  width: 25rem;
+  height: 25rem;
+}
+.info-earth {
+  width: 28rem;
+  height: 28rem;
+}
+.info-mars {
+  width: 21rem;
+  height: 21rem;
+}
+.info-jupiter {
+  width: 36rem;
+  height: 36rem;
+}
+.info-saturn {
+  width: 41rem;
+  height: 41rem;
+}
+.info-uranus {
+  width: 28rem;
+  height: 28rem;
+}
+.info-neptune {
+  width: 28rem;
+  height: 28rem;
+}
+
+/* text and title */
+
+.info-title-container {
+  margin-left: 2rem;
+  height: 100%;
+}
+
+.info-title-container p {
+  font-size: 0.75rem;
+  font-family: "Spartan", sans-serif;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+.info-title-container h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.info-title-container a {
+  text-decoration: none;
+  color: var(--light-grey);
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.info-span {
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 980px) {
+  .info-title-container p {
+    font-size: 0.6rem;
+  }
+  .info-title-container h1 {
+    font-size: 4.5rem;
+  }
+  .info-title-container a {
+    font-size: 0.7rem;
+  }
+
+  /* images */
+
+  .info-img-geology {
+    position: absolute;
+    width: 8rem;
+    height: 10rem;
+    bottom: 0;
+  }
+
+  .info-mercury {
+    width: 12rem;
+    height: 12rem;
+  }
+  .info-venus {
+    width: 19rem;
+    height: 19rem;
+  }
+  .info-earth {
+    width: 22rem;
+    height: 22rem;
+  }
+  .info-mars {
+    width: 15rem;
+    height: 15rem;
+  }
+  .info-jupiter {
+    width: 29rem;
+    height: 29rem;
+  }
+  .info-saturn {
+    width: 32rem;
+    height: 32rem;
+  }
+  .info-uranus {
+    width: 22rem;
+    height: 22rem;
+  }
+  .info-neptune {
+    width: 22rem;
+    height: 22rem;
+  }
+}
+@media screen and (max-width: 790px) {
+  .info-planets {
+    padding: 1.8rem 3rem;
+  }
+
+  .info-img {
+    grid-column: 1/3;
+  }
+  .info-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* images */
+
+  .info-img-geology {
+    position: absolute;
+    width: 7rem;
+    height: 9rem;
+    bottom: 10px;
+  }
+
+  .info-mercury {
+    width: 8rem;
+    height: 8rem;
+  }
+  .info-venus {
+    width: 15rem;
+    height: 15rem;
+  }
+  .info-earth {
+    width: 18rem;
+    height: 18rem;
+  }
+  .info-mars {
+    width: 11rem;
+    height: 11rem;
+  }
+  .info-jupiter {
+    width: 22rem;
+    height: 22rem;
+  }
+  .info-saturn {
+    width: 27rem;
+    height: 27rem;
+  }
+  .info-uranus {
+    width: 18rem;
+    height: 18rem;
+  }
+  .info-neptune {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .info-planets {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+  .info-title-container p {
+    font-size: 0.5rem;
+  }
+  .info-title-container h1 {
+    font-size: 4rem;
+  }
+  .info-title-container a {
+    font-size: 0.6rem;
+  }
+
+  /* images */
+
+  .info-img-geology {
+    position: absolute;
+    width: 7rem;
+    height: 9rem;
+    bottom: 10px;
+  }
+
+  .info-mercury {
+    width: 7rem;
+    height: 7rem;
+  }
+  .info-venus {
+    width: 14rem;
+    height: 14rem;
+  }
+  .info-earth {
+    width: 17rem;
+    height: 17rem;
+  }
+  .info-mars {
+    width: 10rem;
+    height: 10rem;
+  }
+  .info-jupiter {
+    width: 20rem;
+    height: 20rem;
+  }
+  .info-saturn {
+    width: 23rem;
+    height: 23rem;
+  }
+  .info-uranus {
+    width: 16rem;
+    height: 17rem;
+  }
+  .info-neptune {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .info-planets {
+    height: auto;
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-container {
+    margin-top: 8vh;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "btn" "img" "text";
+  }
+  /* images */
+
+  .info-img {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    grid-area: img;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .info-img-geology {
+    position: absolute;
+    width: 5rem;
+    height: 7rem;
+    bottom: -30px;
+  }
+
+  .info-mercury {
+    width: 6rem;
+    height: 6rem;
+  }
+  .info-venus {
+    width: 11rem;
+    height: 11rem;
+  }
+  .info-earth {
+    width: 14rem;
+    height: 14rem;
+  }
+  .info-mars {
+    width: 7rem;
+    height: 7rem;
+  }
+  .info-jupiter {
+    width: 17rem;
+    height: 17rem;
+  }
+  .info-saturn {
+    width: 21rem;
+    height: 21rem;
+  }
+  .info-uranus {
+    width: 13rem;
+    height: 13rem;
+  }
+  .info-neptune {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  /* title and text */
+
+  .info-title-p {
+    margin-top: 2rem;
+    grid-area: text;
+    text-align: center;
+    width: 20rem;
+    margin: auto;
+  }
+
+  .info-title-container {
+    margin-left: 0;
+    height: 100%;
+    text-align: center;
+  }
+
+  .info-title-container p {
+    font-size: 0.75rem;
+    font-family: "Spartan", sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .info-title-container h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  .info-title-container a {
+    text-decoration: none;
+    color: var(--light-grey);
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+  }
+  .info-span {
+    font-weight: lighter;
+  }
+}
